@@ -132,3 +132,133 @@ margin: 10px 0;
     color: #b54769;
     font-size: 14px;
 }
+
+#projects {
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+  }
+  
+  .project img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project h3 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .project p {
+    color: #555;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  #contact {
+    padding: 3rem;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .contact-form {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  
+  .contact-details {
+    flex: 1;
+    max-width: 400px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  
+  .contact-details p, .social-links a {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .contact-details a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+
+
