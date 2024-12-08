@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">UJALA TIWARI.</a>
+
+      <nav class="navbar">
+        <!-- <a href="#">HOME</a> -->
+        <a href="#">ABOUT</a>
+        <a href="#">SKILL</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </header>
+    <!-- <section class="home"> -->
+    <div class="home">
+      <p>Front-end Developer.</p>
+      <h1>Hi,I'm <span>Ujala</span><br />Tiwari From India</h1>
+      <button>Hire me</button>
+    </div>
+    <!-- </section> -->
+    <!-- about---- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img.jpg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello !I'm Ujala Tiwari<br> I’ve just post  graduate from computer science. Looking for my first job, I decided to go with web development, since I understand that it is impossible to succeed in almost any business without some online presence. Hence I know the opportunities are there and will stay there. But I am not one who would opt for freelancing, since I do not enjoy that part of the job–looking for clients, doing marketing, keeping books. I simply enjoy working on the code, developing beautiful websites, and that’s why I apply for this job with you. To my greatest hobbies belong computer games (I limit myself to 1 hour playing a day, in order to not waste that much time playing), and cooking. ,dedicated to staying updated with the latest trends in web devlopment.beyond coding , i have strong skills in c++,Oops .To achieve a responsible position & personal goals by exploring myself more efficiently in an industry with full determination and expand my knowledge by working hard and learning new technologies</p>
+           <div class="tab-titles">
+             <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+             <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+             <p class="tab-links" onclick="opentab('Education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Web Developement</span><br>Web app Developement</li>
+              <li><span>app Developement</span><br>Building Androids/IOS apps</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>2021-Present</span><br>Web  Developement </li>
+              <li><span>2021-2022</span><br>Building Androids/IOS apps</li>
+              <li><span>2024</span><br>internship at codsoft</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="Education">
+             <ul>
+              <li><span>2021-2023</span><br>MCA from Glocal University</li>
+              <li><span>2018-2021</span><br>B.sc from MGKVP</li>
+              <!-- <li><span>2024</span><br>internship at codsoft</li> -->
+             </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+       }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+}
+</script> 
+ </body>
+</html>
+ sr
